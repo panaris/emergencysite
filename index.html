@@ -15,15 +15,14 @@
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,100,300,500,700%7CLato:400,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<!-- Plugins CSS files -->
 		<link rel="stylesheet" href="assets/css/assets.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/shortcodes.css">
 
 		<!-- REVOLUTION SLIDER STYLES -->
 		<link rel="stylesheet" href="assets/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" type="text/css">
 		<link rel="stylesheet" href="assets/revolution/css/settings.css" type="text/css">
 		<link rel="stylesheet" href="assets/revolution/css/navigation.css" type="text/css">
 		
-		<!-- Template CSS files -->
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/shortcodes.css">
 		<link id="theme_css" rel="stylesheet" href="assets/css/light.css">
 		<link id="skin_css" rel="stylesheet" href="assets/css/skins/default.css">
 		
@@ -431,6 +430,8 @@
 													<li><a href="blog-single.html">Right Side Bar</a></li>
 													<li><a href="blog-single-left-bar.html">Left Side Bar</a></li>
 													<li><a href="blog-single-no-bar.html">No side bar</a></li>
+												<li><a href="blog-comments-facebook.html">Facebook Comments</a></li>
+												<li><a href="blog-comments-disqus.html">Disqus Comments</a></li>
 												</ul>
 											</li>
 										
@@ -573,9 +574,9 @@
 		  	<!-- Content start -->
 		  	<div class="pageContent">
 		  		
-		  		<div id="rev_slider_429_1_wrapper" class="rev_slider_wrapper">
+		  		<div class="rev_slider_wrapper">
 					<!-- START REVOLUTION SLIDER 5.2.0 fullscreen mode -->
-					<div id="rev_slider_429_1" class="rev_slider">
+					<div id="rev_slider_429_1" class="rev_slider" data-version="5.0">
 						<ul>
 						
 						<!-- SLIDE  -->
@@ -1226,7 +1227,7 @@
 										<h4 class="uppercase main-color">Home Pages</h4>
 										<p>Proin gravida nibh vel velit auctor enean sollicitud lorem quis bibendum auctor, nisi elit consequipsum.</p>
 									</div>
-									<div class="box-number light-font"><span class="count-title"><span class="odometer" data-value="120" data-timer="1500" data-after="+"></span></span></div>
+									<div class="box-number light-font"><span class="count-title"><span class="odometer" data-value="100" data-timer="1500" data-after="%"></span></span></div>
 								</div>
 							</div>
 						</div>
@@ -1857,7 +1858,7 @@
 						  <div class="col-md-3 widget_it_widget_tweets">
 						  	<h3>Twitter Feed</h3>
 						  	<div class="tweet">
-						  		<a class="twitter-timeline" href="https://twitter.com/it_rays" data-widget-id="529778322134167553"></a>
+						  		<a class="twitter-timeline" href="https://twitter.com/IT__RAYS"></a>
 						  	</div>
 						  </div>
 						  
@@ -1933,7 +1934,6 @@
  		<!-- SLIDER REVOLUTION  -->
 		<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
 		<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-		
 		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
 			(Load Extensions only on Local File Systems !  +
 			The following part can be removed on Server for On Demand Loading) -->
@@ -1950,7 +1950,7 @@
 		<script type="text/javascript">
 			var tpj=jQuery;
 			var revapi429;
-			tpj(document).ready(function() {
+			tpj(window).load(function() {
 				if(tpj("#rev_slider_429_1").revolution == undefined){
 					revslider_showDoubleJqueryError("#rev_slider_429_1");
 				}else{
